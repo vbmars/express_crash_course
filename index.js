@@ -14,7 +14,9 @@ app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
 // Body Parser Middleware
+//取代bodyparser
 app.use(express.json());
+//to handle form
 app.use(express.urlencoded({ extended: false }));
 
 // Homepage Route
